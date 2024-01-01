@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMIT</title>
+  </head>
+  <body>
+    <center><h1>Saylani Mass IT Training</h1></center>
+    <center><h2>Registraion Form</h2></center>
+    <form>
+      <select name="City">
+        <option value="">Select City</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Gotki">Gotki</option>
+        <option value="Sukkur">Sukkur</option>
+        <option value="Islamabad">Islamabad</option>
+      </select>
+      <select name="Courses">
+        <option value="">Select Course</option>
+        <option value="WMA">Web and Mobile App Development</option>
+        <option value="GD">Graphic Designing</option>
+        <option value="AI-C">Ai and Chatbot</option>
+      </select>
+      <br />
+      <br />
+      <label for="Fullname"
+        >Full Name:
+        <input
+          name="Fullname"
+          type="text"
+          placeholder="Full Name"
+          size="30"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="Fathername">
+        Father Name:
+        <input
+          name="Fathername"
+          type="text"
+          placeholder="Father Name"
+          size="30"
+          required
+        />
+      </label>
+      <br />
+      <br />
+      <label for="email">
+        Email:
+        <input
+          name="email"
+          type="email"
+          required
+          size="30"
+          placeholder="Email"
+        />
+      </label>
+      <br /><br />
+      <label for="tel">
+        Phone:
+        <input name="tel" type="tel" required size="30" placeholder="Phone" />
+      </label>
+      <br /><br />
+      <label for="CNIC">
+        CNIC:
+        <input name="CNIC" type="tel" required size="30" placeholder="CNIC" />
+      </label>
+      <br /><br />
+      <label for="F-CNIC">
+        Father CNIC (Optional):
+        <input
+          name="F-CNIC"
+          type="tel"
+          size="30"
+          placeholder="Father CNIC (Optional)"
+        />
+      </label>
+      <br /><br />
+      <label for="DOB">
+        Date of Birth:
+        <input name="DOB" type="date" size="30" placeholder="" required />
+      </label>
+      <br /><br />
+      <label for="gender">
+        Select Gender: <input type="radio" name="gender" value="M" /> Male
+      </label>
+      <label for="gender">
+        <input type="radio" name="gender" value="F" /> Female
+      </label>
+    </form>
+  </body>
+</html>
