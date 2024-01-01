@@ -3,93 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMIT</title>
+    <title>Form</title>
   </head>
   <body>
-    <center><h1>Saylani Mass IT Training</h1></center>
-    <center><h2>Registraion Form</h2></center>
+    <h1>SMIT</h1>
+    <h2>Registration Form</h2>
     <form>
-      <select name="City">
-        <option value="">Select City</option>
-        <option value="Karachi">Karachi</option>
-        <option value="Hyderabad">Hyderabad</option>
-        <option value="Gotki">Gotki</option>
-        <option value="Sukkur">Sukkur</option>
-        <option value="Islamabad">Islamabad</option>
-      </select>
-      <select name="Courses">
-        <option value="">Select Course</option>
-        <option value="WMA">Web and Mobile App Development</option>
-        <option value="GD">Graphic Designing</option>
-        <option value="AI-C">Ai and Chatbot</option>
-      </select>
-      <br />
-      <br />
-      <label for="Fullname"
-        >Full Name:
+      <label for="fullname"
+        >Full Name: <br />
         <input
-          name="Fullname"
           type="text"
+          name="fullname"
+          size="25"
+          maxlength="30"
           placeholder="Full Name"
-          size="30"
           required
         />
       </label>
       <br /><br />
-      <label for="Fathername">
-        Father Name:
+      <label for="fathername"
+        >Father Name: <br />
         <input
-          name="Fathername"
           type="text"
+          name="fathername"
+          size="25"
+          maxlength="30"
           placeholder="Father Name"
-          size="30"
           required
         />
       </label>
-      <br />
-      <br />
-      <label for="email">
-        Email:
+      <br /><br />
+      <label for="address"
+        >Address: <br />
         <input
-          name="email"
+          type="text"
+          name="address"
+          size="25"
+          maxlength="30"
+          placeholder="Address"
+          required
+        />
+      </label>
+      <br /><br />
+      <label for="email"
+        >Email: <br />
+        <input
           type="email"
-          required
-          size="30"
+          name="email"
+          size="25"
+          maxlength="30"
           placeholder="Email"
+          required
         />
       </label>
       <br /><br />
-      <label for="tel">
-        Phone:
-        <input name="tel" type="tel" required size="30" placeholder="Phone" />
-      </label>
-      <br /><br />
-      <label for="CNIC">
-        CNIC:
-        <input name="CNIC" type="tel" required size="30" placeholder="CNIC" />
-      </label>
-      <br /><br />
-      <label for="F-CNIC">
-        Father CNIC (Optional):
+      <label for="mobileno"
+        >Mobile No: <br />
         <input
-          name="F-CNIC"
           type="tel"
-          size="30"
-          placeholder="Father CNIC (Optional)"
+          name="mobileno"
+          size="25"
+          maxlength="30"
+          placeholder="Mobile No"
+          required
         />
       </label>
       <br /><br />
-      <label for="DOB">
-        Date of Birth:
-        <input name="DOB" type="date" size="30" placeholder="" required />
+      <label for="cnic"
+        >CNIC: <br />
+        <input
+          type="tel"
+          name="Cnic"
+          size="25"
+          maxlength="30"
+          placeholder="CNIC"
+          required
+        />
       </label>
       <br /><br />
-      <label for="gender">
-        Select Gender: <input type="radio" name="gender" value="M" /> Male
+      <label for="dob"
+        >DOB: <br />
+        <input type="date" name="dob" size="25" maxlength="30" required />
       </label>
-      <label for="gender">
-        <input type="radio" name="gender" value="F" /> Female
+      <br /><br />
+      <label for="gender"
+        >Gender: <br />
+        <input
+          type="radio"
+          name="gender"
+          value="Male"
+          size="25"
+          maxlength="30"
+          required
+        />Male
+        <input
+          type="radio"
+          name="gender"
+          value="Female"
+          size="25"
+          maxlength="30"
+          required
+        />Female
       </label>
+      <br />
+      <br />
+      <select name="Course" required>
+        <option value="">Select Course</option>
+        <option value="Web and Mobile App Development">
+          Web and Mobile App Development
+        </option>
+        <option value="Flutter">Flutter</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+        <option value="edio Animation">Vedio Animation</option>
+        <option value="Phyton">Phyton</option>
+      </select>
+      <br />
+      <br />
+      <label for="img">
+        Upload Image: <br />
+        <input type="file" required />
+      </label>
+      <br /><br />
+      <button>Submit</button>
     </form>
   </body>
 </html>
